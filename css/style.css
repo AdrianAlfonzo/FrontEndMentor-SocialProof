@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 15px;
+    padding: 0;
+    margin: 20% 5%;
+    background: url("../images/bg-pattern-top-mobile.svg") no-repeat top,
+				url("../images/bg-pattern-bottom-mobile.svg") no-repeat bottom;
+}
+
+.intro-seccion{
+    text-align: center;
+}
+
+.intro-header{
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 0% 15%;
+    margin-bottom: 5%;
+    color: blueviolet;
+}
+
+.intro-text{
+    color: grey;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.01rem;
+}
+
+.cajitas-review{
+    text-align: center;
+    margin: 10% 0%;
+}
+
+.cajitas{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: blueviolet;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    padding: 2%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+.cajitas>img{
+    margin: 0.5%;
+}
+
+
+
+
+.cajita-cliente{
+    background-color: blueviolet;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-bottom: 5%;
+    padding: 13%;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.header-cliente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.header-cliente>img{
+    border-radius: 40%;
+    width: 15%;
+    margin-right: 10%;
+}
+
+.header-cliente>h1{
+    font-weight: bold;
+}
+
+.header-cliente>h1>span{
+    color: palevioletred;
+    font-weight: normal;
+}
+
+.header-cliente>h1, .header-cliente>h2{
+    display: inline-block;
+}
+
+
+
+
+.attribution{
+    font-size: 20px;
+    text-align: center;
+}
+.attribution a {
+    color: blueviolet
+}
+
+
+
+@media screen and (min-width: 764px) {
+    body{
+        margin: 2%;
+        background: url("../images/bg-pattern-top-desktop.svg") no-repeat top,
+        url("../images/bg-pattern-bottom-desktop.svg") no-repeat bottom;
+
+    }
+    
+    .intro-review{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 2%;
+	}
+
+	.intro-section{
+		text-align: left;
+		width: 50%;
+		padding: 5%;
+	}
+
+	.intro-header{
+		font-size: 3.5rem;
+		padding: 0%;
+	}
+
+	.intro-text{
+		font-size: 1.1rem;
+		line-height: 2rem;
+	}
+
+
+
+
+	.cajitas-review{
+		width: 50%;
+		margin: 0;
+		padding: 6% 3%;
+		padding-bottom: 0%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cajitas{
+		padding: 0;
+		width: 80%;
+		height: 20%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 4%;
+	}
+
+	.icon-estrellas{
+		width: 40%;
+		display: inline-block;
+	}
+
+	.icon-estrellas>img{
+		margin-left: 5%;
+	}
+
+	.cajitas>p{
+		display: inline-block;
+		font-size: 0.9rem;
+	}
+
+
+	.cajitas:first-child{
+		margin-top: 0;
+	}
+
+	.cajitas:nth-child(2){
+		align-self: center;
+	}
+
+	.cajitas:nth-child(3){
+		align-self: flex-end;
+	}
+
+
+
+	.cajita-opinion-cliente{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding-left: 5%;
+		padding-right: 3%;
+		height: 40vh;
+		margin-bottom: 0.8%;
+	}
+
+	.cajita-cliente{
+		width: 32%;
+		padding: 3% 5%;
+		margin: 0;
+	}
+
+	.cajita-cliente:nth-child(2){
+		align-self: center;
+	}
+
+	.cajita-cliente:nth-child(3){
+		align-self: flex-end;
+	}
+
+	.cajita-cliente>p{
+		font-size: 1.1em;
+	}
+
+}
+
